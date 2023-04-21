@@ -10,11 +10,18 @@ export function Home() {
     const [participantName, setParticipantName] = useState('');
 
     function handleParticipantAdd() {
-        if (participants.includes(participantName)) {
-            return Alert.alert("Participante Existe", `O Participante ${participantName} já existe na lista`);
+        if (participants.includes(participantName) || participantName === '') {
+            return participantName === ''
+                ? Alert.alert("Participante Vazio", "O Participante não pode ser vazio")
+                : Alert.alert("Participante já está na Lista.", `O Participante ${participantName} já existe na lista.`, [
+                    {
+                        text: 'Ok 😢',
+                        onPress: () => setParticipantName(''),
+                    }
+                ]);
         }
 
-        setParticipants(prevState => [...prevState, participantName]);
+        setParticipants(prevState => [...prevState, participantName])
         setParticipantName('');
     }
 
@@ -35,6 +42,12 @@ export function Home() {
 
         console.log(`Remover participante ${name}`);
     }
+
+    // Função apenas para testar o estado
+    // function handleState(value: string) {
+    //     setParticipantName(value);
+    //     console.log(participantName);
+    // }
 
     return (
         <View style={styles.container}>

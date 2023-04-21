@@ -45,5 +45,12 @@ useState<string[]> - sintaxe para determinar que qual o tipo de dado que será a
 
 # Render
 - Antes dos seus componentes serem exibidos na tela eles dever ser renderizados pelo React.
-- 
 
+# Dica de Debug
+- Usar o return, na linha do _console.log_, para o retante do código não seja executado.
+- Adicionando tipo uma etiqueta:
+
+Exemplo:
+```
+return console.log("Etiqueta: ", onde querodebugar);
+```
