@@ -16,17 +16,17 @@ Usando Typescript no React Native.
 
 ## Componente ScrollView e FlatList
 
-- O *ScrollView* é um componente que permite que o usuário deslize para ver o conteúdo que não está visível na tela. O *ScrollView* renderiza todos os seus componentes filhos de reação de uma só vez, mas isso tem uma desvantagem de desempenho.
+- O **ScrollView** é um componente que permite que o usuário deslize para ver o conteúdo que não está visível na tela. O **ScrollView** renderiza todos os seus componentes filhos de reação de uma só vez, mas isso tem uma desvantagem de desempenho.
 
-- *FlatList* é um componente que renderiza uma lista de elementos de forma otimizada, removendo os itens que rolam para fora da tela para economizar memória e tempo de processamento.
+- **FlatList** é um componente que renderiza uma lista de elementos de forma otimizada, removendo os itens que rolam para fora da tela para economizar memória e tempo de processamento.
 
 # Hooks
 - Permite que você use o estado e outras funcionalidades do React sem escrever uma classe.
 - Encapsula funcionalidade e facilita o reaproveitamento da sua lógica.
 
-*useState* - Permite que você adicione o estado ao seu componente de função.
-*useEffect* - Permite que você execute efeitos colaterais em seus componentes de função.
+**useState** - Permite que você adicione o estado ao seu componente de função.
+**useEffect** - Permite que você execute efeitos colaterais em seus componentes de função.
 
-- Os nomes dos Hooks começam com *"use"* e usam camelCase.
+- Os nomes dos Hooks começam com **"use"** e usam camelCase.
 Algumas classe de escrita:
 ![Classe de escrita](./tipos-Escrita.png)
