@@ -30,3 +30,20 @@ Usando Typescript no React Native.
 - Os nomes dos Hooks começam com **"use"** e usam camelCase.
 Algumas classe de escrita:
 ![Classe de escrita](./tipos-Escrita.png)
+
+## Tipagem do useState
+
+```
+useState<string[]> - sintaxe para determinar que qual o tipo de dado que será armazenado no estado.
+```
+
+# Imutabilidade
+- Não podemos alterar o valor de uma variável, mas podemos criar uma nova variável com o novo valor.
+- Faz uma comparação entre o valor antigo e o novo, e só atualiza o valor se for diferente.
+- O React Native não atualiza o valor de uma variável, mas sim o valor de um estado.
+
+
+# Render
+- Antes dos seus componentes serem exibidos na tela eles dever ser renderizados pelo React.
+- 
+
