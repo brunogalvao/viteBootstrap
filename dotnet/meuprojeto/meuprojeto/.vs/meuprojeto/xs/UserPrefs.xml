@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{4CC7600C-765E-43AA-8723-7BE86BC26D5F}|Default">
+  <MonoDevelop.Ide.ItemProperties.meuprojeto PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="meuprojeto/Pages/Index.cshtml">
+    <Files>
+      <File FileName="meuprojeto/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="meuprojeto/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="meuprojeto/Pages/Index.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="meuprojeto" expanded="True">
+            <Node name="meuprojeto" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

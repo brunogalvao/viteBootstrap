@@ -1,0 +1,783 @@
+@import '../fonts/montserrat/style.css';
+@import '../fonts/playfair/style.css';
+
+:root {
+  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: var(--fontPadrao);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary: #52151B;
+  --secondary: #97263C;
+  --light: #fff;
+  --floor: 5rem;
+  --natal: #DAA573;
+  --fontPadrao: montserrat, sans-serif;
+  --fontNatal: 'playfair-display', serif;
+  --alturaImg: 30%;
+}
+
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.fst-italic {
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+
+.floor {
+  position: absolute;
+  width: 100%;
+  height: var(--floor);
+  border-bottom: var(--floor) solid var(--primary);
+  bottom: 0;
+  z-index: 1;
+}
+
+.araucaria {
+  position: fixed;
+  width: 300%;
+  height: 22rem;
+  bottom: 0;
+  display: flex;
+  transform: translateY(45px);
+}
+
+.arbustos {
+  position: fixed;
+  width: 300%;
+  height: 9.4rem;
+  bottom: 0;
+  z-index: 9;
+  display: flex;
+  overflow: hidden;
+
+  @include media(md-abaixo) {
+    height: 7rem;
+  }
+
+  img {
+    bottom: 0;
+    object-fit: cover;
+  }
+}
+
+
+.cloud {
+  position: absolute;
+  width: 100%;
+  height: 6rem;
+  background: url('../img/estrelas.svg');
+  background-repeat: repeat-x;
+}
+
+
+.cloud-animation {
+  position: absolute;
+  width: 100vw;
+  height: 123px;
+  top: 0;
+  background: url('../img/estrelas-animation.svg');
+  background-repeat: repeat-x;
+  opacity: 1;
+  z-index: 0;
+  transition: all 2s ease-in;
+  animation: blink-animation 2s infinite;
+  -webkit-animation: blink-animation 2s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+
+  // 50% {
+  //   opacity: 1;
+  // }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+
+  // 50% {
+  //   opacity: 1;
+  // }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.scene2 {
+  width: auto;
+  height: var(--alturaImg);
+  bottom: calc(var(--floor) - 3px);
+}
+
+.scene3 {
+  width: auto;
+  height: var(--alturaImg);
+  bottom: calc(var(--floor) - 3px);
+}
+
+
+
+.scene15 {
+  width: auto;
+  height: var(--alturaImg);
+  bottom: calc(var(--floor) - 3px);
+}
+
+.fireworks-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -99;
+}
+
+
+.content-wrapper {
+  position: relative;
+}
+
+.content-wrapper:before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #cb0c2b;
+  background-image: linear-gradient(0deg, #cb0c2b 0%, #3f201d 100%);
+  z-index: -2;
+}
+
+.logoSmall {
+  width: 100%;
+  height: 11rem;
+  background: url('../img/logoSmall.svg') no-repeat;
+  background-position: center center;
+  top: 6.2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.inner .scene {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+
+.logoScene15 {
+  /* position: absolute; */
+  width: 218px;
+  margin-top: 2rem;
+}
+
+.abertura .botanico {
+  position: absolute;
+  width: 100%;
+  height: var(--alturaImg);
+  bottom: calc(var(--floor) - 6px);
+}
+
+/* smartphone */
+
+/*-----------------------------------*/
+.scene {
+
+  /* botão */
+  .btn-natal {
+    height: 50px;
+    padding: 0 30px;
+    background: var(--secondary);
+    color: var(--natal);
+    border: none;
+    font-family: var(--fontNatal);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.8;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    display: none;
+
+    @include media(md-abaixo) {
+      height: 42px;
+      padding: 0 .9rem;
+    }
+
+    &:before {
+      content: '......';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url('../img/btn-icon.svg') no-repeat;
+      left: -20px;
+      color: transparent;
+      align-items: center;
+      flex-direction: column;
+      line-height: 1.4rem;
+      margin-top: 5px;
+      font-size: 1.1rem;
+
+      @include media(md-abaixo) {
+        width: 32px;
+        height: 32px;
+        left: -16px;
+      }
+    }
+  }
+
+  .btn-natal:is(:hover) {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+  p {
+    color: var(--light);
+    font-family: montserrat-regular;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    @include media(md-abaixo) {
+      font-size: .9rem;
+      line-height: 1.2rem;
+    }
+
+  }
+
+  .titulo {
+    font-family: var(--fontNatal);
+    color: var(--light);
+    font-size: 1.87rem;
+    line-height: 1.6rem;
+    margin-bottom: .8rem;
+    text-align: center;
+    font-style: italic;
+
+    @include media(md-abaixo) {
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+    }
+  }
+
+  .subtitulo {
+    /* width: 60%; */
+    font-family: var(--fontNatal);
+    color: var(--natal);
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-bottom: 0;
+    font-weight: bolder;
+    text-align: center;
+
+    @include media(md-abaixo) {
+      font-size: 1.43rem;
+    }
+  }
+
+  .painel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+
+    @include media(md-abaixo) {
+      width: 90%;
+    }
+
+    .box1 {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-grow: 1;
+      width: 100%;
+      height: 62%;
+      z-index: 10;
+      align-items: center;
+
+      .velopLogo {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 230px;
+        ;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+        @include media(md-abaixo) {
+          max-height: 165px;
+        }
+
+        img {
+          width: auto;
+          max-height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .textoBotao {
+        width: 48%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @include media(md-abaixo) {
+          width: 95%;
+        }
+      }
+    }
+
+    .box2 {
+      height: calc(38% - var(--floor));
+      margin-bottom: var(--floor);
+      display: flex;
+      justify-content: center;
+      flex-grow: 0;
+      position: relative;
+      z-index: 0;
+      width: 100%;
+
+      img {
+        width: auto;
+        height: 100%;
+        bottom: -7px;
+        max-width: 100%;
+        max-height: 100%;
+
+        @include media(md-abaixo) {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          bottom: -3px;
+          max-width: 100%;
+          position: fixed;
+        }
+
+      }
+    }
+  }
+
+  .imagemMeio {
+    position: fixed;
+    right: -12.5%;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include media(md-abaixo) {
+      right: -20%;
+      width: 40%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 60%;
+      max-width: 100%;
+      bottom: calc(var(--floor) - 3px);
+    }
+
+    .boxCavalinho {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .bastao {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 20px;
+          height: 100%;
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .cavalo {
+        position: absolute;
+        bottom: 20%;
+        animation: cavalo 5s infinite ease-in-out;
+
+        img{
+          height: 300px;
+          @include media(md-abaixo) {
+            height: 170px;
+          }
+        }
+        @include media(md-abaixo) {
+          bottom: 17%;
+        }
+      }
+    }
+  }
+}
+
+.scene1 {
+  .painel {
+    .box1 {
+      .velopLogo {
+        max-height: 263px;
+        margin-top: 20px;
+
+        @include media(md-abaixo) {
+          max-height: 230px;
+
+
+        }
+
+
+      }
+    }
+  }
+
+}
+
+.reiMagoBox {
+  right: 3.5% !important;
+  bottom: -3rem;
+
+  @include media(md-abaixo) {
+    display: none !important;
+  }
+}
+
+.rodaGiganteBox {
+  position: absolute;
+  left: 10rem;
+  bottom: calc(var(--floor));
+  transform: translateY(-80px);
+  @include media(md-abaixo) {
+    transform: translateY(-25px);
+    left: 2rem;
+  }
+  
+  .painel {
+    position: relative;
+
+    .roda {
+      width: 350px;
+      height: 350px;
+      background-image: url(../img/roda.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      animation: rotating 40s linear infinite;
+      @include media(md-abaixo) {
+        width: 200px;
+      height: 200px;
+      }
+      .meioRoda {
+        width: 130px;
+        @include media(md-abaixo) {
+          width: 90px;
+        }
+      }
+
+      .boxCadeiras {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        .cadeira {
+          display: inline-flex;
+          position: absolute;
+          justify-content: center;
+          align-items: center;
+          @include media(md-abaixo) {
+            display: none;
+       
+          }
+          .imagemCadeira {
+            position: relative;
+            max-width: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rotatingCadeira 40s linear infinite;
+            @include media(md-abaixo) {
+              max-width: 25px;
+              width: 25px;
+            }
+          }
+        }
+
+        .cadeira1 {
+          transform: translateX(153px);
+          top: 8px;
+
+
+        }
+
+        .cadeira2 {
+          transform: translateX(260px);
+          top: 47px;
+        }
+
+        .cadeira3 {
+          transform: translateX(318px);
+          top: 153px;
+        }
+
+        .cadeira4 {
+          transform: translateX(285px);
+          top: 273px;
+        }
+
+        .cadeira5 {
+          transform: translateX(153px);
+          top: 342px;
+        }
+
+        .cadeira6 {
+          transform: translateX(16px);
+          top: 278px;
+        }
+
+        .cadeira7 {
+          transform: translateX(-22px);
+          top: 157px;
+        }
+
+        .cadeira8 {
+          transform: translateX(30px);
+          top: 46px;
+        }
+      }
+
+    }
+
+    .baseRoda {
+      width: 100%;
+      position: absolute;
+      bottom: -88px;
+      z-index: 0;
+      @include media(md-abaixo) {
+       
+      }
+    }
+  }
+}
+
+.cavaloBox {
+  right: 2rem !important;
+
+  @include media(md-abaixo) {
+    right: -14% !important;
+  }
+}
+
+.boxArvoreMusica {
+  @include media(md-abaixo) {
+    width: 60% !important;
+    right: -43% !important;
+    z-index: 1;
+  }
+}
+
+.anjinhoBox {
+  right: 3.5% !important;
+
+  @include media(md-abaixo) {
+    right: -2% !important;
+  }
+}
+
+.escolaSustentabilidade {
+  width: 80%;
+
+  @include media(md-abaixo) {
+    width: 100%;
+  }
+}
+
+.escolaSustentabilidade {
+  width: 80%;
+
+  @include media(md-abaixo) {
+    width: 100%;
+  }
+}
+
+
+@keyframes cavalo {
+  0% {
+    -transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50px) rotate(-12deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+
+  }
+}
+
+@keyframes arrows {
+  to {
+    transform: translateX(100%) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatingCadeira {
+  0% {
+    transform: rotate(0);
+
+  }
+
+  25% {
+    transform: rotate(-90deg) translate(22px, 19px);
+    @include media(md-abaixo) {
+      transform:translate(10px, 10px);
+    }
+
+  }
+
+  50% {
+    transform: rotate(-180deg) translate(17px, 20px);
+
+    @include media(md-abaixo) {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  75% {
+    transform: rotate(-270deg) translate(-22px, 20px);
+    @include media(md-abaixo) {
+      transform: translate(-0px, 0px);
+    }
+  }
+
+  100% {
+    transform: rotate(-360deg) translate(0, 0px);
+    @include media(md-abaixo) {
+       
+    }
+  }
+
+
+
+
+}
+
+.mataNuvens {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  border: 0;
+  left: 0;
+  bottom: -5rem;
+
+  img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @include media(md-abaixo) {
+    bottom: calc(var(--floor));
+  }
+}

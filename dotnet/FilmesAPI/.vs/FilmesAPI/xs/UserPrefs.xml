@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{399D54A5-C3B0-41C6-84D7-907F8AD19B8D}|Default">
+  <MonoDevelop.Ide.ItemProperties.FilmesAPI PreferredExecutionTarget="/Applications/iTerm.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilmesAPI/Controllers/FilmeControler.cs">
+    <Files>
+      <File FileName="FilmesAPI/Controllers/FilmeControler.cs" Line="19" Column="1" />
+      <File FileName="FilmesAPI/Models/Filme.cs" Line="10" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FilmesAPI" expanded="True">
+            <Node name="FilmesAPI" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

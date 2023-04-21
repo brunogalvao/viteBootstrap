@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="page" class="site">
+
+    <div id="feather" class="feather"></div>
+
+    <header id="masthead" class="site-header" role="banner">
+      <nav class="anchor-nav" role="navigation">
+        <a href="#panel-1" class="anchor">Panel 1</a>
+        <a href="#panel-3" class="anchor">Panel 3</a>
+        <a href="#panel-4" class="anchor">Panel 4</a>
+        <a href="#panel-5" class="anchor">Panel 5</a>
+      </nav>
+    </header>
+
+    <main id="content" class="site-content" role="main">
+
+      <section id="panels">
+
+        <!-- <div class="araucaria"></div> -->
+
+        
+        <div id="panels-container" style="width: 500%;">
+
+          <img class="araucaria" src="img/araucaria.svg" />
+          
+          <article id="panel-1" class="panel full-screen red">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+
+                  <img src="" alt="">
+
+                </div>
+                <div class="col-6 d-flex flex-column">
+
+                  <h2>Panel 1</h2>
+
+                  <p class="step-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of
+                    Lorem Ipsum.
+                  </p>
+
+                  <div class="panels-navigation text-right">
+                    <div class="nav-panel" data-sign="plus"><a href="#panel-2" class="anchor">Next</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article id="panel-2" class="panel full-screen orange">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+
+                  <img src="" alt="">
+
+                </div>
+                <div class="col-6 d-flex flex-column">
+
+                  <h2>Panel 2</h2>
+
+                  <p class="step-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of
+                    Lorem Ipsum.
+                  </p>
+
+                  <div class="panels-navigation">
+                    <div class="nav-panel" data-sign="minus"><a href="#panel-1" class="anchor">Prev</a></div>
+                    <div class="nav-panel" data-sign="plus"><a href="#panel-3" class="anchor">Next</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article id="panel-3" class="panel full-screen purple">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+
+                  <img src="" alt="">
+
+                </div>
+                <div class="col-6 d-flex flex-column">
+
+                  <h2>Panel 3</h2>
+
+                  <p class="step-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of
+                    Lorem Ipsum.
+                  </p>
+
+                  <div class="panels-navigation">
+                    <div class="nav-panel" data-sign="minus"><a href="#panel-2" class="anchor">Prev</a></div>
+                    <div class="nav-panel" data-sign="plus"><a href="#panel-4" class="anchor">Next</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article id="panel-4" class="panel full-screen green">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+
+                  <img src="" alt="">
+
+                </div>
+                <div class="col-6 d-flex flex-column">
+
+                  <h2>Panel 4</h2>
+
+                  <p class="step-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of
+                    Lorem Ipsum.
+                  </p>
+
+                  <div class="panels-navigation">
+                    <div class="nav-panel" data-sign="minus"><a href="#panel-3" class="anchor">Prev</a></div>
+                    <div class="nav-panel" data-sign="plus"><a href="#panel-5" class="anchor">Next</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article id="panel-5" class="panel full-screen gray">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+
+                  <img src="" alt="">
+
+                </div>
+                <div class="col-6 d-flex flex-column">
+
+                  <h2>Panel 5</h2>
+
+                  <p class="step-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Including versions of
+                    Lorem Ipsum.
+                  </p>
+
+                  <div class="panels-navigation text-right">
+                    <div class="nav-panel" data-sign="minus"><a href="#panel-4" class="anchor">Prev</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

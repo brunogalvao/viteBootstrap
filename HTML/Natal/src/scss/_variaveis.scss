@@ -1,0 +1,67 @@
+﻿/*Configurações garais*/
+/*$primario-cor: #055A99;
+$primario-cor2: #edf4ff;
+$primario-cor3: #f8f9fa;
+
+$complementares-cor: #dc3545; //vermelho
+$complementares-cor2: #FFC02F; //laranja
+$complementares-cor3: #28a745; //verde
+$complementares-cor4: #CED4DA; //linhas BS
+$complementares-cor5: #F1F2F4; //cinza quase branco
+
+$neutras-cor: #202121;
+$neutras-cor2: #333333;
+$neutras-cor3: #444444;
+$neutras-cor4: #6a6a6a;
+$neutras-cor5: #555555;
+$neutras-cor6: #999999;
+
+$texto-fontetipo: 'roboto-regular';
+$texto-cor: ($neutras-cor);
+$texto-tamanho: 1.25rem;
+$texto-espacamento-y: 1.5;
+$texto-pequeno: 0.88rem;
+
+$titulos-fontetipo: 'montserrat-medium';
+
+$h1-fontetipo: 'montserrat-semibold';
+$h1-tamanho: 2.88rem;
+
+$h2-tamanho: 3rem;
+
+$h3-tamanho: 2.25rem;
+
+$link-decoracao: none;
+
+$botao-cor: ($primario-cor);
+$botao-texto-cor: #fff;
+
+$botao-hover-cor: darken($primario-cor, 10%);
+$botao-hover-texto-cor: #fff;
+
+$input-fontetipo: 'roboto-medium';
+$input-texto-cor: ($neutras-cor6);
+$input-tamanho: 1rem;
+
+$valido-cor: ($complementares-cor3);
+$erro-cor: ($complementares-cor);
+
+$tabela-cor: #fff;
+$tabela-linha-cor: #f2f2f2;
+$tabela-borda-cor: #dee2e6;
+$tabela-texto-cor: #212529;
+
+$select-icone: "../img/seta-baixo.svg";
+$select-icone-hover: "../img/seta-baixo-hover.svg";*/
+
+
+//Responsive breakpoints
+$cellphone-up: 576px;
+$cellphone-down: 575.98px;
+$mobile-up: 768px;
+$mobile-down: 767.98px;
+$tablet-up: 992px;
+$tablet-down: 991.98px;
+$desktop-up: 1200px;
+$desktop-down: 1199.98px;
+// ---------------------------

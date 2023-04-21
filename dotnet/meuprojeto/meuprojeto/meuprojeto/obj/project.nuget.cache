@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "N0ljHCrEOO16BUpqZuHSLHxpLzxdy8fbycWRoXV+xHdlPg0e0iuOgE9DwIWN3x/1PvsenjBe+yP0nilSO3WOIg==",
+  "success": true,
+  "projectFilePath": "/Users/brunogalvao/Documents/GitHub/dotnet/meuprojeto/meuprojeto/meuprojeto/meuprojeto.csproj",
+  "expectedPackageFiles": [
+    "/Users/brunogalvao/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/brunogalvao/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.30/microsoft.netcore.app.host.osx-x64.3.1.30.nupkg.sha512",
+    "/Users/brunogalvao/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
